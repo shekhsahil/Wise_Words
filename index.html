@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wise Words</title>
     <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6219/6219626.png" />
-
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/6219/6219626.png"
+    />
   </head>
   <body>
     <header>
-      <h1 class="app-title">Wise Words</h1>
+      <h1 class="app-title">"Wise Words"</h1>
       <!-- Add a new select element for categories -->
       <select id="categorySelect">
         <!-- <option value="">Select Category</option> -->
         <option value="inspirational">Inspirational</option>
+        <option value="Philosophy">Philosophy</option>
+        <option value="Literature">Literature</option>
+        <option value="Business">Business</option>
         <option value="life">Life</option>
         <option value="love">Love</option>
         <option value="Technology">Technology</option>
@@ -24,13 +29,14 @@
         <option value="Success">Success</option>
         <option value="Happiness">Happiness</option>
         <option value="Change">Change</option>
-        <option value="Humor">Humor</option>
         <option value="Family">Family</option>
         <option value="Education">Education</option>
         <option value="Faith">Faith</option>
         <option value="Nature">Nature</option>
         <option value="Science">Science</option>
         <option value="History">History</option>
+        
+
 
         <!-- Add more categories as needed -->
       </select>
@@ -42,23 +48,24 @@
           Press the "Generate Quote" button to get a random quote.
         </p>
         <p id="authorText"></p>
-        <button id="favoriteButton">💓</button>
+        <center>
+          <button id="favoriteButton">🤍</button>
+        </center>
       </div>
       <div id="favoritesContainer">
-        <h2 style="color:white;">Favorite Quotes</h2>
+        <h2 style="color: white">Favourite Quotes 🤍</h2>
         <ul id="favoritesList"></ul>
-        
       </div>
     </main>
     <center>
-        <button id="copyButton">Copy  💓 </button>
-
+      <button id="copyButton">C O P Y</button>
     </center>
-<footer>
-    <center>
-        <p>Developed By S K Sahil Mandal © 2023</p>
-    </center>
-</footer>
+    <footer>
+      <hr />
+      <center>
+        <p style="color:white;">Developed By S K Sahil Mandal © 2023</p>
+      </center>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
