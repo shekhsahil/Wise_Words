@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-size: 100vw 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header {
+    /* background-color: #333; */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+select, button {
+    font-size: 16px;
+    margin: 10px;
+    padding: 8px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+#categorySelect{
+    border-radius:  20px;
+}
+#quoteContainer, #favoritesContainer {
+    border: 6px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    border-radius: 20px;
+    max-height: 300px;
+
+}
+#favoritesContainer{
+    overflow-y: scroll;
+}
+
+/* #favoritesContainer {
+    background-color: #f0f0f0;
+} */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+button{
+    border-radius: 50px;
+}
+#copyButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width:30vw;
+}
+
+#copyButton:hover {
+    background-color: #45a049;
+}
+
+
+@media screen and (max-width: 767px) {
+    /* Styles for mobile devices only */
+    main{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 40px;
+    }
+    #quoteContainer,#favoritesContainer{
+        width:80vw;
+        height:80vw;
+    }
+}
