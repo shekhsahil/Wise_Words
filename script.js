@@ -6,7 +6,19 @@ const authorText = document.getElementById("authorText");
 const favoriteButton = document.getElementById("favoriteButton");
 const favoritesList = document.getElementById("favoritesList");
 const copyButton = document.getElementById("copyButton");
+////////////////////////////////////////////////////
+const colorPicker = document.getElementById('colorPicker');
+const container1 = document.getElementById('favoritesContainer');
+const container2 = document.getElementById('quoteContainer');
 
+colorPicker.addEventListener('input', function() {
+    const selectedColor = colorPicker.value;
+    container1.style.backgroundColor = selectedColor;
+    container2.style.backgroundColor = selectedColor;
+   
+
+});
+//////////////////////////////////////////////////
 let favoriteQuotes = [];
 
 generateButton.addEventListener("click", generateQuote);
